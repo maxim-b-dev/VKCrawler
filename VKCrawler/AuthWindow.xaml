@@ -1,0 +1,8 @@
+﻿<Window x:Class="VKCrawler.AuthWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AuthWindow" Height="360" Width="630">
+    <Grid>
+        <WebBrowser x:Name="wbAuth" LoadCompleted="wbAuth_LoadCompleted"/>
+    </Grid>
+</Window>

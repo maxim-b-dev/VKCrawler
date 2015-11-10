@@ -1,0 +1,21 @@
+﻿<Window x:Name="wndSearch" x:Class="VKCrawler.SearchWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Сбор данных" Height="298" Width="228" Loaded="wndSearch_Loaded" MinWidth="228" MinHeight="298" MaxWidth="228" MaxHeight="298">
+    <Grid>
+        <TextBox x:Name="tbAgeMin" PreviewTextInput="PreviewTextInput" HorizontalAlignment="Left" Height="23" Margin="75,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="tbAgeMax" PreviewTextInput="PreviewTextInput" HorizontalAlignment="Left" Height="23" Margin="140,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center"/>
+        <ComboBox x:Name="cbCountry" DisplayMemberPath="title" SelectedValuePath="id" HorizontalAlignment="Left" Margin="10,66,0,0" VerticalAlignment="Top" Width="200" Height="23" SelectionChanged="cbCountry_SelectionChanged" IsEnabled="False"/>
+        <ComboBox x:Name="cbRegion" DisplayMemberPath="title" SelectedValuePath="id" HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top" Width="200" Height="23" IsEnabled="False" SelectionChanged="cbRegion_SelectionChanged"/>
+        <ComboBox x:Name="cbCity" DisplayMemberPath="title" SelectedValuePath="id" HorizontalAlignment="Left" Margin="10,122,0,0" VerticalAlignment="Top" Width="200" Height="23" IsEnabled="False" SelectionChanged="cbCity_SelectionChanged"/>
+        <Button x:Name="btnUsersSearch" Content="Поиск пользователей" HorizontalAlignment="Left" Margin="10,150,0,0" VerticalAlignment="Top" Width="200" Height="23" IsEnabled="False" Click="btnUsersSearch_Click"/>
+        <Label Content="Возраст от" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top" Height="23" Width="60" Padding="0" VerticalContentAlignment="Center"/>
+        <Label Content="до" HorizontalAlignment="Left" Margin="120,38,0,0" VerticalAlignment="Top" Height="23" Width="15" Padding="0" VerticalContentAlignment="Center"/>
+        <Label Content="лет" HorizontalAlignment="Left" Margin="185,38,0,0" VerticalAlignment="Top" Height="23" Width="25" Padding="0" VerticalContentAlignment="Center"/>
+        <Button x:Name="btnAuth" Content="Авторизация" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="200" Height="23" Click="btnAuth_Click"/>
+        <ProgressBar x:Name="pbProgress" HorizontalAlignment="Left" Height="23" Margin="10,178,0,0" VerticalAlignment="Top" Width="200"/>
+        <TextBlock x:Name="tbProgress" HorizontalAlignment="Left" Margin="10,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="200" TextAlignment="Center" FontSize="10"/>
+        <Button x:Name="btnCancel" Content="Отмена" HorizontalAlignment="Left" Margin="112,234,0,0" VerticalAlignment="Top" Width="98" Height="23" Click="btnCancel_Click" IsEnabled="False"/>
+        <Button x:Name="btnPause" Content="Пауза" HorizontalAlignment="Left" Margin="10,234,0,0" VerticalAlignment="Top" Width="98" Height="23" Click="btnPause_Click" IsEnabled="False"/>
+    </Grid>
+</Window>

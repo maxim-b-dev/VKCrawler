@@ -1,0 +1,11 @@
+﻿<Window x:Name="wndMain" x:Class="VKCrawler.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="VK Crawler" Height="127" Width="228" MinHeight="127" MinWidth="228" MaxHeight="127" MaxWidth="228" Loaded="wndMain_Loaded">
+    <Grid>
+        <Button x:Name="btnSearchWindow" Content="Сбор данных" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="200" Click="btnSearchWindow_Click" Height="23"/>
+        <Button x:Name="btnDataWindow" Content="Просмотр" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top" Width="200" Click="btnDataWindow_Click" Height="23"/>
+        <TextBlock x:Name="tbDBInfo" HorizontalAlignment="Left" Margin="10,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="200" TextAlignment="Center"/>
+
+    </Grid>
+</Window>
